@@ -103,3 +103,11 @@ python main.py
 - Training logs are saved in `output/train_info/navigation.txt`
 - Trained Q-tables are saved in `output/models/q_table.npy`
 - Visualizations are saved in `output/visualizations/`
+
+## Contributing
+
+ - [Mohamed Abdallah](https://github.com/mohamedabdallah82)
+ - [Menna Essam](https://github.com/mennaessam187)
+ - [Abdulrahman Dahshan](https://github.com/Abdulrahman-Dahshan)
+ - [Ahmed Mohamed](https://github.com/0xAMF)
+ - [Mahmoud Aboelsalhen](https://github.com/sal7en)

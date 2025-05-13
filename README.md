@@ -14,30 +14,25 @@ This project implements a Q-Learning algorithm to train an agent to navigate thr
 ## Project Structure
 
 ```
-Algo2/
-├── main.py                    # Main entry point
-├── src/
-│   ├── agents/               # Agent implementation
-│   │   ├── __init__.py
-│   │   └── agent.py
-│   ├── environment/          # Maze environment
-│   │   ├── __init__.py
-│   │   └── Environment.py
-│   ├── gui/                  # GUI implementation
-│   │   ├── __init__.py
-│   │   └── gui.py
-│   ├── training/            # Training logic
-│   │   ├── __init__.py
-│   │   └── train.py
-│   ├── utils/               # Utility functions
-│   │   ├── __init__.py
-│   │   └── visualize.py
-│   └── __init__.py
+maze_solver/
+├── assets/
+│   ├── jerry.png
+│   ├── cheese.png
+│   └── tom.png
 ├── output/
-│   ├── train_info/         # Training logs
-│   ├── models/             # Saved Q-tables
-│   └── visualizations/     # Generated plots
-└── assets/                 # Static assets
+│   ├── models/
+│   ├── train_info/
+│   └── visualizations/
+├── src/
+│   ├── agents/
+│   │   └── agent.py
+│   ├── environment/
+│   │   └── Environment.py
+│   ├── training/
+│   │   └── train.py
+│   └── utils/
+│       └── visualize.py
+├── main.py
 ```
 
 ## Requirements

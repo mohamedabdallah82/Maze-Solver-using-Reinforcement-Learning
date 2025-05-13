@@ -3,7 +3,6 @@ from tkinter import ttk, scrolledtext
 import threading
 from src.training.train import train
 from src.utils.visualize import visualize_q_table, plot_learning_curve
-from src.utils.visualize_navigation import visualize_navigation
 import time
 from datetime import timedelta
 
@@ -103,7 +102,6 @@ class MazeTrainingGUI:
         
         ttk.Button(self.visualize_frame, text="Show Q-table", command=self.show_q_table).grid(row=0, column=0, padx=5, pady=2)
         ttk.Button(self.visualize_frame, text="Show Learning Curves", command=self.show_learning_curves).grid(row=0, column=1, padx=5, pady=2)
-        ttk.Button(self.visualize_frame, text="Show Navigation Results", command=self.show_navigation_results).grid(row=1, column=0, columnspan=2, padx=5, pady=2)
         
     def create_progress_widgets(self):
         # Progress frame
@@ -156,13 +154,6 @@ class MazeTrainingGUI:
             self.log_progress("Learning curves generated and saved in 'output/visualizations/learning_curves.png'")
         else:
             self.log_progress("No training data available. Please train the agent first.")
-        
-    def show_navigation_results(self):
-        try:
-            visualize_navigation()
-            self.log_progress("Navigation visualization generated and saved in 'output/visualizations/navigation_visualization.png'")
-        except Exception as e:
-            self.log_progress(f"Error generating navigation visualization: {str(e)}")
         
     def toggle_training(self):
         if not self.is_training:

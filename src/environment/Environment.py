@@ -16,7 +16,7 @@ class myMazeEnv(gym.Env):
     # This is a standard attribute in Gym environments.
     # It gives Gym some info about how your environment supports rendering.
     # 'human' means your environment can open a window and display visual output (like the animated maze).
-    metadata = {'render_modes': ['human'], 'render_fps': 20}
+    metadata = {'render_modes': ['human'], 'render_fps': 100}
 
     # “dunder” (short for double underscore) automatically called when you create an instance of a class.
     def __init__(self, render_mode=None, grid_size=(6,6), number_of_walls=10, cell_size=80):
